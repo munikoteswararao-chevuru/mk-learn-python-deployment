@@ -26,5 +26,8 @@ jobs:
       - name: Add project to Python path
         run: echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
 
+      - name: Show program output
+        run: python app/main.py  
+
       - name: Run Tests
         run: pytest -q
